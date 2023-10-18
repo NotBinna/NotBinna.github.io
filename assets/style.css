@@ -1,9 +1,17 @@
 /* 2372034 Exalt Winata Gunawan */
 
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
 .bg-nav-login{
     background-color: salmon;
 }
 
-.center{
-    
+.font1{
+    font-family: 'Indie Flower', cursive;
+}
+.size1{
+    font-size: 100px;
+    text-align: center;
+    margin-top: 100px;
+    font-weight: bolder;
 }
