@@ -9,28 +9,35 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/style.css">
   </head>
-  <body>
+  <body onload="showAlert()">
+    <script>
+      function showAlert() {
+         alert("Username : admin \nPassword : admin123 \n \nUsername : user\nPassword : user123");
+      }
+     </script>
+    <script>
+      function showAlert() {
+         alert("Username : admin \nPassword : admin123 \n \nUsername : user\nPassword : user123");
+      }
+     </script>
     <!-- navbar -->
       <section>
-        <nav class="navbar navbar-expand-sm fixed-top" data-bs-theme="dark" style="background-color: salmon;">
+        <div class="navbar bg-nav-login navbar-nav-scroll">
+
+        </div>
+      </section>
+
+      <section>
+        <nav class="navbar navbar-expand-sm fixed-top " data-bs-theme="dark" style="background-color: salmon;">
           <div class="container-fluid">
             <a class="navbar-brand" href="#" style="font-family: Matura MT Script Capitals;"><img style="margin-right: 10px;" src="assets/img/e-logo.png" alt="" width="40em" height="auto">Exalt</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button> 
+
             
             
             <!-- collapse -->
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-
-              <a href="assets/main.html" class="btn btn-primary" tabindex="-1" role="button" aria-disabled="true">Continue</a>
-
-
-              
-
-            </div>
-
-
+            
+                
+                
             
             
 
@@ -40,22 +47,74 @@
             </div>
             
           </div>
+          
         </nav>
         
         
       </section>
 <br><br><br>
-    <!-- center text -->
+      <!-- Login Form -->
       <section>
         <div class="container">
-          <p class="font1 size1">Please Sign-In or Log-In</p>
-        </div>
+          <div class="card text-center mx-auto mt-5" style="width:400px ;">
+            <img src="..." class="card-img-top" alt="...">
+  <!-- test -->
+            <div class="card-body">
+              <form id="login-form" action="assets/main.html">
+                <div class="mb-3">
+                  <input type="text" class="form-control" id="userid" aria-describedby="inputGroupPrepend2" placeholder="Username" required />
+                </div>
+                <div class="input-group mb-3" id="password">
+                  <input class="form-control" type="password" id="pswrd" name="password" placeholder="Password" required />
+                  <span class="input-group-text"><i class="bi bi-eye-slash" id="togglePassword"></i></span>
+                  <script>
+                     // toggle password
+            const togglePassword = document.querySelector("#togglePassword");
+            const password = document.querySelector("#pswrd");
+            const login_form = document.querySelector("#login-form");
+      
+            togglePassword.addEventListener("click", function (e) {
+              const type = password.getAttribute("type") === "password" ? "text" : "password";
+      
+              password.setAttribute("type", type);
+      
+              this.classList.toggle("bi-eye");
+            });
+                  </script>
+                </div>
+                <div class="col-12">
+                  <input class="btn btn-primary" type="submit" onclick="return acc()" value="Login"></input>
+                </div>
+              </form>
+            </div>
+          </div>
+          <script>
+      
+            // verifikasi akun admin
+      
+            function acc() {
+              if(document.getElementById('userid').value == "admin" && document.getElementById('pswrd').value == "admin123" || document.getElementById('userid').value == "user" && document.getElementById('pswrd').value == "user123"){
+                login_form.setAttribute("action", "assets/main.html")
+              }
+              else{
+                  alert("Error Password or Username")
+                  document.getElementById('userid').value = '';
+                  document.getElementById('pswrd').value = '';
+                  return false;
+              }
+            }
+          </script>
+          </div>
+
+
       </section>
 
+      
   
 
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
   </body>
 </html>
