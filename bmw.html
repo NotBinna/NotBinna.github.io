@@ -53,12 +53,12 @@
             data-bs-toggle="dropdown"
             aria-expanded="false"
           >
-            <img src="" alt="" class="prfl" id="pfp"/>
+            <img src="images/profile.jpg" alt="" class="prfl" id="pfp"/>
           </button>
           <ul class="dropdown-menu dropdown-menu-end">
             <li><p class="dropdown-item-text mb-1" id="user"></p></li>
             <li>
-              <a class="dropdown-item" href="" onclick="logout()">Log-Out</a>
+              <a class="dropdown-item" href="" onclick="logout()">Sign-Out</a>
             </li>
           </ul>
         </div>
@@ -148,25 +148,51 @@
             data-bs-slide-to="2"
             aria-label="Slide 3"
           ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="3"
+            aria-label="Slide 4"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="4"
+            aria-label="Slide 5"
+          ></button>
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active" data-bs-interval="2000">
             <img
-              src="images/BMW-M-1000-RR-black.png"
+              src="images/bmw/bmw-c400gt.png"
               class="d-block w-100 crbk"
               alt=""
             />
           </div>
           <div class="carousel-item" data-bs-interval="2000">
             <img
-              src="images/superleggera-v4-red.png"
+              src="images/bmw/bmw-f900r.png"
               class="d-block w-100 crbk"
               alt=""
             />
           </div>
           <div class="carousel-item" data-bs-interval="2000">
             <img
-              src="images/Kawasaki-H2R.png"
+              src="images/bmw/bmw-gs.png"
+              class="d-block w-100 crbk"
+              alt=""
+            />
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img
+              src="images/bmw/bmw-k1600b.png"
+              class="d-block w-100 crbk"
+              alt=""
+            />
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img
+              src="images/bmw/bmw-r18.webp"
               class="d-block w-100 crbk"
               alt=""
             />
@@ -192,7 +218,48 @@
         </button>
       </div>
     </div>
-    <br /><br /><br /><br><br>
+    <br /><br /><br />
+
+    <!-- Bikes -->
+    <div class="container text-center detail">
+      <div class="row mb-3">
+        <div class="col">
+          <img
+            src="images/bmw/bmw-c400gt-1.png"
+            class="imgdetail1"
+          />
+        </div>
+      </div>
+      <div class="row mb-5">
+        <div class="col-md-4">
+          <img src="images/bmw/bmw-c400gt-2.jpg" class="imgdetail" alt="" />
+        </div>
+        <div class="col-md-8">
+          Optional accessory: BMW Motorrad Connectivity. Using high-resolution
+          6.5-inch TFT colour display, smartphone applications such as telephone
+          calls, listening to music or navigation can be used simply and safely.
+        </div>
+      </div>
+      <div class="row mb-5">
+        <div class="col-md-8">
+          With 350 cc engine and a power of 25 kW (34 hp) at 7,500 rpm, it is
+          not just powerful, but also scores points with low consumption.
+        </div>
+        <div class="col-md-4">
+          <img src="images/bmw/bmw-c400gt-3.jpeg" class="imgdetail" alt="" />
+        </div>
+      </div>
+      <div class="row mb-5">
+        <div class="col-md-4">
+          <img src="images/bmw/bmw-c400gt-4.jpg" class="imgdetail" alt="" />
+        </div>
+        <div class="col-md-8">
+          Keyless Ride The following opening and closing functions are
+          controlled: Ignition, handlebar, seat, gas cap and storage
+          compartments.
+        </div>
+      </div>
+    </div>
 
     <!-- Bike Brand -->
     <div class="container brands">
@@ -272,12 +339,13 @@
       </div>
     </div>
 
+
     <marquee behavior="scroll" direction="">
       <h1 class="text">Special New Year Discount Up To 20%</h1>
     </marquee>
 
     <footer class="p-2">
-      Ventela Bike Shop | Exalt Winata Gunawan | 2372034@maranatha.ac.id<br />
+      Ventela Bike Shop | Exalt Winata Gunawan <br />
       &copy; 2023 Ventela Bike
     </footer>
 

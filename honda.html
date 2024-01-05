@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="shortcut icon" href="images/Vente.png" type="image/x-icon" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
   </head>
   <body data-bs-theme="light">
     <!-- navbar -->
@@ -53,12 +54,12 @@
             data-bs-toggle="dropdown"
             aria-expanded="false"
           >
-            <img src="" alt="" class="prfl" id="pfp"/>
+            <img src="images/profile.jpg" alt="" class="prfl" id="pfp"/>
           </button>
           <ul class="dropdown-menu dropdown-menu-end">
             <li><p class="dropdown-item-text mb-1" id="user"></p></li>
             <li>
-              <a class="dropdown-item" href="" onclick="logout()">Log-Out</a>
+              <a class="dropdown-item" href="" onclick="logout()">Sign-Out</a>
             </li>
           </ul>
         </div>
@@ -148,25 +149,38 @@
             data-bs-slide-to="2"
             aria-label="Slide 3"
           ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="3"
+            aria-label="Slide 4"
+          ></button>
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active" data-bs-interval="2000">
             <img
-              src="images/BMW-M-1000-RR-black.png"
+              src="images/honda/honda-cbr-1.jpg"
               class="d-block w-100 crbk"
               alt=""
             />
           </div>
           <div class="carousel-item" data-bs-interval="2000">
             <img
-              src="images/superleggera-v4-red.png"
+              src="images/honda/honda-cbr-2.jpeg"
               class="d-block w-100 crbk"
               alt=""
             />
           </div>
           <div class="carousel-item" data-bs-interval="2000">
             <img
-              src="images/Kawasaki-H2R.png"
+              src="images/honda/honda-cbr-3.jpg"
+              class="d-block w-100 crbk"
+              alt=""
+            />
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img
+              src="images/honda/honda-cbr.png"
               class="d-block w-100 crbk"
               alt=""
             />
@@ -192,7 +206,77 @@
         </button>
       </div>
     </div>
-    <br /><br /><br /><br><br>
+    <br /><br /><br />
+
+    <!-- Bikes -->
+    <div class="container text-center detail">
+      <div class="row mb-2">
+        <div class="col">
+          <h1>Our Variant Colour</h1>
+        </div>
+      </div>
+      <div class="row mb-3">
+        <div class="col">
+          <img
+            src="images/honda/honda-cbr-v1.png"
+            class="imgdetail1"
+            onclick="onClick(this)"
+          />
+        </div>
+        <div class="col">
+          <img
+            src="images/honda/honda-cbr-v2.jpg"
+            class="imgdetail1"
+            onclick="onClick(this)"
+          />
+        </div>
+        <div class="col">
+          <img
+            src="images/honda/honda-cbr-v3.png"
+            class="imgdetail1"
+            onclick="onClick(this)"
+          />
+        </div>
+      </div>
+      <div class="row mb-5">
+        <div class="col-md-4">
+          <img src="images/honda/honda-cbr-lcd.png" class="imgdetail" alt="" />
+        </div>
+        <div class="col-md-8 align-self-center">
+          <h1>Full color Digital Panel Meter</h1>
+        </div>
+      </div>
+      <div class="row mb-5">
+        <div class="col-md-8 align-self-center">
+          <h1>Honda Smart Key System</h1>
+        </div>
+        <div class="col-md-4">
+          <img src="images/honda/honda-cbr-key.png" class="imgdetail" alt="" />
+        </div>
+      </div>
+      <div class="row mb-5">
+        <div class="col-md-3">
+          <img
+            src="images/honda/honda-cbr-shock1.png"
+            class="imgdetail"
+            alt=""
+          />
+        </div>
+        <div class="col-md-6 align-self-center">
+          <h1>
+            Front and Rear Ohlins <br />
+            Smart Electronic Control Suspension
+          </h1>
+        </div>
+        <div class="col-md-3">
+          <img
+            src="images/honda/honda-cbr-shock.png"
+            class="imgdetail"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
 
     <!-- Bike Brand -->
     <div class="container brands">
@@ -243,6 +327,17 @@
       </div>
     </div>
 
+    <!-- big image -->
+    <div id="picmodal" class="w3-modal" onclick="this.style.display='none'">
+      <span class="w3-button w3-hover-red w3-xlarge w3-display-topright"
+        >&times;</span
+      >
+      <div class="w3-modal-content w3-animate-zoom">
+        <img id="bigpic" style="width: 100%" />
+      </div>
+    </div>
+
+    <!-- contact -->
     <p>
       <img
         src="images/contact.png"
@@ -272,12 +367,13 @@
       </div>
     </div>
 
+    <!-- marque -->
     <marquee behavior="scroll" direction="">
       <h1 class="text">Special New Year Discount Up To 20%</h1>
     </marquee>
 
     <footer class="p-2">
-      Ventela Bike Shop | Exalt Winata Gunawan | 2372034@maranatha.ac.id<br />
+      Ventela Bike Shop | Exalt Winata Gunawan <br />
       &copy; 2023 Ventela Bike
     </footer>
 

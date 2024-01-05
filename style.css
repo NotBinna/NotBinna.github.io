@@ -1,0 +1,167 @@
+/*2372034 Exalt winata Gunawan B */
+
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    cursor: url("images/cursor.png");
+}
+body{
+    cursor: url("images/cursor.png");
+}
+.hiden{
+  display: none;
+}
+
+.btn-color{
+ background-color: lightblue;
+ 
+}
+.logo-size{
+    width: 120px;   
+}
+.imgg{
+    width: 90%;
+}
+.dropdown:hover .dropdown-menu { 
+  display: block; 
+} 
+
+/* Dark Mode Toggle Button */
+.dark{
+  height: 40px;
+}
+
+/* profile photo */
+.prfl{
+  width: 50px;
+  border-radius: 50%;
+}
+
+
+/* login */
+
+.login-container {
+  max-width: 400px;
+  margin: auto;
+  margin-top: 50px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 250px;
+}
+
+.form-group input {
+  margin-bottom: 10px;
+}
+
+
+
+/* carousel */
+.crsl{
+  display: flex;
+  justify-content: center;
+}
+.carousel-inner{
+    max-height: 90vh !important;
+    height: 90;
+    justify-content: center;
+}
+.crbk{
+  max-height: 90vh !important; 
+  justify-content: center;
+  object-fit: contain;
+}
+
+/* Bike Detail */
+.detail{
+  justify-content: center;
+}
+.imgdetail{
+  width: 200px;
+  transition: all 0.7s;
+}
+.imgdetail:hover {
+  transform: scale(2);
+  transition: all 0.7s;
+}
+
+.imgdetail1{
+  width: 100%;
+}
+.text-detail{
+ 
+}
+
+/* big pics */
+
+.bigpics{
+  width: 100%;
+  height: 100%;
+}
+
+
+
+
+/* new bikes */
+.brands{
+  display: block;
+}
+.brands img{
+  width: 100px;
+}
+.brands .col{
+  margin: 5px;
+}
+.title{
+  font-size:x-large;
+  font-weight: bold;
+}
+
+.contact{
+  height: auto;
+  width: 75px;
+  display: block;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  border-radius: 50%;
+  z-index: 2;
+}
+.cnt{
+  width: 45px;
+  height: auto;
+}
+.bxflt{
+  display: block;
+  position: fixed;
+  bottom: 90px;
+  right: 10px;
+  z-index: 1;
+}
+.abc{
+  width: auto;
+}
+
+
+
+
+  footer{
+    background-color: lightgray;
+    color: black;
+    justify-content: center;
+    text-align: center;
+}
